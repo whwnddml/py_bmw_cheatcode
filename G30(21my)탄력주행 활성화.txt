@@ -1,0 +1,31 @@
+ <cafd id="00003E52" name="HU_MGU" author="" series="G30">
+   <code description="탄력주행 활성화 1/3 [+ SAS, DKOMBI]">
+     <group id="3008">
+       <function start="2" end="2" mask="00000100b" comment="ECO_CONF_SAILING">01</function>
+       <function start="4" end="4" mask="00000100b" comment="GLOBAL_CONF_SAILING">01</function>
+       <function start="4" end="4" mask="00010000b" comment="EFF_DYN_SAILING">01</function>
+     </group>
+     <group id="3009">
+       <function start="1" end="1" mask="00000010b" comment="SAILING_COUNTER">01</function>
+     </group>
+   </code>
+ </cafd>
+
+ <cafd id="000042C1" name="SAS" author="" series="G30">
+   <code description="탄력주행 활성화 2/3 [+ HU_MGU, DKOMBI]">
+     <group id="3000">
+       <function start="63" end="63" mask="11111111b" comment="C_SEGELN_VORHANDEN">01</function>
+     </group>
+   </code>
+ </cafd>
+
+ <cafd id="00004508" name="DKOMBI" author="" series="G30">	
+   <code description="탄력주행 활성화 3/3 [+ HU_MGU, SAS]">
+     <group id="3000">
+       <function start="12" end="12" mask="01000000b" comment="SEGELN_ENABLE">01</function>
+       <function start="15" end="15" mask="00001000b" comment="SEGELN_IN_COMFORT_MODUS">01</function>
+     </group>
+   </code>
+ </cafd>
+
+
